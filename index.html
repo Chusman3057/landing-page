@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- iconscout/uni-icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+
+    <!-- jquery cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <!-- silk css files -->
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/slick-theme.css" />
+
+    <!-- style sheet file -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://js.stripe.com/v3/"></script>
+
+    <title>Landing Page</title>
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div class="logo" style="cursor: pointer">DeMo.</div>
+        <div class="toggle_btn">
+          <i class="uil uil-bars"></i>
+        </div>
+        <ul>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Packages</a></li>
+          <li><a href="#">Who We Are</a></li>
+          <li><a href="#">Our Portfolio</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><button class="action_btn">Contacts</button></li>
+        </ul>
+      </nav>
+
+      <div class="dropdown_menu">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Packages</a></li>
+        <li><a href="#">Who We Are</a></li>
+        <li><a href="#">Our Portfolio</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><button class="action_btn">Contacts</button></li>
+      </div>
+      <!-- Navbar End -->
+
+      <!-- Bannar -->
+      <div class="bannar row">
+        <div class="left-sec col-md-7">
+          <h1>
+            best
+            <span>marketing</span>
+            <br />
+            company.
+          </h1>
+          <p class="small-heading">#1 MARKETING Services Agency in USA UK</p>
+          <p class="para" style="font-size: 13px">
+            If you're looking for the best SEO company for your business
+            <br />
+            PageTraffic is best choice.
+          </p>
+          <div>
+            <button>Get Start</button>
+            <img src="images/video.png" alt="" class="video_icon" />
+            <span>
+              <a
+                href="#"
+                style="
+                  color: #e71d36;
+                  font-size: 12px;
+                  text-decoration: underline;
+                  margin-left: 5px;
+                "
+              >
+                Watch Video
+              </a>
+            </span>
+          </div>
+        </div>
+        <div class="right-sec col-md-5">
+          <div>
+            <img src="images/main-img.png" alt="not found" />
+          </div>
+        </div>
+      </div>
+      <!-- Bannar End -->
+    </header>
+    <!-- Header End -->
+
+    <!-- Main container -->
+    <main>
+      <!-- Featured Section -->
+      <section class="featured-sec">
+        <h1>Our work featured on</h1>
+        <div class="img-container">
+          <div class="slide">
+            <img src="images/forbes.png" alt="not found" />
+          </div>
+          <div class="slide">
+            <img src="images/netflix.png" alt="not found" />
+          </div>
+          <div class="slide">
+            <img src="images/amazon.png" alt="not found" />
+          </div>
+          <div class="slide">
+            <img src="images/sej-logo 1.png" alt="not found" />
+          </div>
+          <div class="slide">
+            <img src="images/entrepreneur-logo 1.png" alt="not found" />
+          </div>
+        </div>
+      </section>
+      <!-- Featured Section End -->
+
+      <!-- Information Section -->
+      <section class="info-sec">
+        <!-- Info Left Side -->
+        <div class="info-text">
+          <h4>
+            How PageTraffic creates <br />
+            hyper business growth
+          </h4>
+          <p>
+            PageTraffic offers top-notch SEO and digital <br />
+            marketing solutions to help you rank high on search <br />
+            results, connnect with.
+          </p>
+          <ul>
+            <li>
+              <span><img src="images/disc.png" alt="not found" /></span>
+              PageTraffic offers top-notch SEO and digital
+            </li>
+            <li>
+              <span><img src="images/disc.png" alt="not found" /></span>
+              PageTraffic offers top-notch SEO
+            </li>
+            <li>
+              <span><img src="images/disc.png" alt="not found" /></span>
+              PageTraffic offers top-notch
+            </li>
+            <li>
+              <span><img src="images/disc.png" alt="not found" /></span>
+              PageTraffic offers top-notch SEO and
+            </li>
+          </ul>
+          <div class="clint-info">
+            <div class="info">
+              <h1 style="color: #e71d36">1.9k</h1>
+              <p>Total Audience</p>
+            </div>
+            <div class="info">
+              <h1 style="color: #2ec4b6">5.7k</h1>
+              <p>Complete Project</p>
+            </div>
+          </div>
+          <button class="btn-explore btn-more-info">Explore Now</button>
+        </div>
+        <!-- Info Left Side End -->
+
+        <!-- Info Cards Right Side -->
+        <div class="main-card">
+          <div class="inner-card">
+            <!-- first card -->
+            <div
+              class="card-box c-1"
+              style="border-color: #e71d36; background: #ffecea4e"
+            >
+              <div
+                class="image"
+                style="border-color: #ffecea; background-color: #ffecea"
+              >
+                <img src="images/vector 2.png" alt="" />
+              </div>
+              <h5>I Want Leads</h5>
+              <p>
+                Looking to get higher ROI by improving website with PageTraffic.
+              </p>
+              <a href="#" style="color: #e71d36">view more</a>
+            </div>
+            <!-- second card -->
+            <div
+              class="card-box c-2"
+              style="border-color: #2ec4b6; background: #f6fffe"
+            >
+              <div
+                class="image"
+                style="border-color: #d2fffb; background: #d2fffb"
+              >
+                <img src="images/search 2.png" alt="" />
+              </div>
+              <h5>I Want Leads</h5>
+              <p>
+                Looking to get higher ROI by improving website with PageTraffic.
+              </p>
+              <a href="#" style="color: #2ec4b6">view more</a>
+            </div>
+          </div>
+          <div class="inner-card second_row">
+            <!-- thrid card -->
+            <div
+              class="card-box c-3"
+              style="border-color: #2ec4b6; background: #f6fffe"
+            >
+              <div
+                class="image"
+                style="border-color: #d2fffb; background: #d2fffb"
+              >
+                <img src="images/search 2.png" alt="" />
+              </div>
+              <h5>I Want Leads</h5>
+              <p>
+                Looking to get higher ROI by improving website with PageTraffic.
+              </p>
+              <a href="#" style="color: #2ec4b6">view more</a>
+            </div>
+            <!-- forth card -->
+            <div
+              class="card-box c-4"
+              style="border-color: #e71d36; background: #ffecea4e"
+            >
+              <div
+                class="image"
+                style="border-color: #ffecea; background-color: #ffecea"
+              >
+                <img src="images/vector 2.png" alt="" />
+              </div>
+              <h5>I Want Leads</h5>
+              <p>
+                Looking to get higher ROI by improving website with PageTraffic.
+              </p>
+              <a href="#" style="color: #e71d36">view more</a>
+            </div>
+          </div>
+        </div>
+        <!-- Information Cards Right Side End -->
+      </section>
+      <!-- Information Section End -->
+
+      <!-- Client Section -->
+      <section class="client-sec row">
+        <div>
+          <h4>CASE STUDY</h4>
+        </div>
+        <div class="col-md-3">
+          <h3>
+            OUR CLIENT <br />
+            GETS RESULTS
+          </h3>
+          <p>
+            PageTraffic offers top-notch SEO and digital marketing solutions.
+          </p>
+        </div>
+        <div class="col-md-9">
+          <div class="image-container slider">
+            <div class="slide">
+              <img src="images/Rectangle 10.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Rectangle 11.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Rectangle 7.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Rectangle 8.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Rectangle 10.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Rectangle 11.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Rectangle 7.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Rectangle 8.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Client Section End -->
+
+      <!-- Portfilo Section -->
+      <section class="portfolio-sec">
+        <h1>Our Portfolio</h1>
+
+        <div class="portfolio-nav">
+          <ul>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Website Dessing</a></li>
+            <li><a href="#">Mobile App</a></li>
+            <li><a href="#">Desing Branding</a></li>
+            <li><a href="#">UI/UX</a></li>
+          </ul>
+        </div>
+
+        <div class="portfolio-img-cart">
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="images/image 8.png" alt="" />
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="images/image 9.png" alt="" />
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="images/image 10.png" alt="" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="images/image 11.png" alt="" />
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="images/image 12.png" alt="" />
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              <img src="images/image 13.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <center>
+          <button class="btn-more-info">view more</button>
+        </center>
+      </section>
+      <!-- Portfilo Section End -->
+
+      <!-- Blog Post Section -->
+      <section class="blog-post">
+        <h1 style="text-align: center">See Our Blog Post</h1>
+
+        <div
+          class="blog_post_images_container d-flex justify-content-between my-5"
+        >
+          <div class="left-sec-card d-flex flex-column">
+            <div
+              class="inner-card d-flex"
+              style="border-color: #f2bbc2; background: #fff8f8"
+            >
+              <div class="card_image">
+                <img src="images/Rectangle 21.png" alt="" />
+              </div>
+              <div class="p-4">
+                <p>10 Feb, 2023 By Admin</p>
+                <h4>UI/UX Design Tipe</h4>
+                <h6>
+                  Promotion World has once placed PageTraffic <br />
+                  among the top.
+                </h6>
+                <a href="#" style="color: #e71d36"
+                  >Read more
+                  <span class="arrow">
+                    <img src="images/arrow-right.png" alt="" class="arrow" />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="inner-card d-flex"
+              style="border-color: #91dcd5; background: #f8fffe"
+            >
+              <div class="card_image" style="box-shadow: 0 4px 3px cyan">
+                <img src="images/Rectangle 21 (1).png" alt="" />
+              </div>
+              <div class="p-4">
+                <p>10 Feb, 2023 By Admin</p>
+                <h4>Meta Technology.</h4>
+                <h6>
+                  Promotion World has once placed PageTraffic <br />
+                  among the top.
+                </h6>
+                <a href="#" style="color: #2ec4b6"
+                  >Read more
+                  <span>
+                    <img
+                      src="images/arrow-right (1).png"
+                      alt=""
+                      class="arrow"
+                    />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="left-sec-card d-flex flex-column">
+            <div
+              class="inner-card d-flex"
+              style="border-color: #91dcd5; background: #f8fffe"
+            >
+              <div class="card_image" style="box-shadow: 0 4px 3px cyan">
+                <img src="images/Rectangle 21 (3).png" alt="" />
+              </div>
+              <div class="p-4">
+                <p>10 Feb, 2023 By Admin</p>
+                <h4>Improve your UX/UI</h4>
+                <h6>
+                  Promotion World has once placed PageTraffic <br />
+                  among the top.
+                </h6>
+                <a href="#" style="color: #2ec4b6"
+                  >Read more
+                  <span>
+                    <img
+                      src="images/arrow-right (1).png"
+                      alt=""
+                      class="arrow"
+                    />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="inner-card d-flex"
+              style="border-color: #f2bbc2; background: #fff8f8"
+            >
+              <div class="card_image">
+                <img src="images/Rectangle 21 (2).png" alt="" />
+              </div>
+              <div class="p-4">
+                <p>10 Feb, 2023 By Admin</p>
+                <h4>UI/UX Design Tipe</h4>
+                <h6>
+                  Promotion World has once placed PageTraffic <br />
+                  among the top.
+                </h6>
+                <a href="#" style="color: #e71d36"
+                  >Read more
+                  <span>
+                    <img src="images/arrow-right.png" alt="" class="arrow" />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="left-sec-card d-flex flex-column">
+            <div
+              class="inner-card d-flex"
+              style="border-color: #91dcd5; background: #f8fffe"
+            >
+              <div class="card_image">
+                <img src="images/Rectangle 21 (3).png" alt="" />
+              </div>
+              <div class="p-4">
+                <p>10 Feb, 2023 By Admin</p>
+                <h4>Improve your UX/UI</h4>
+                <h6>
+                  Promotion World has once placed PageTraffic <br />
+                  among the top.
+                </h6>
+                <a href="#" style="color: #2ec4b6"
+                  >Read more
+                  <span>
+                    <img
+                      src="images/arrow-right (1).png"
+                      alt=""
+                      class="arrow"
+                    />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="inner-card d-flex"
+              style="border-color: #f2bbc2; background: #fff8f8"
+            >
+              <div class="card_image">
+                <img src="images/Rectangle 21 (2).png" alt="" />
+              </div>
+              <div class="p-4">
+                <p>10 Feb, 2023 By Admin</p>
+                <h4>UI/UX Design Tipe</h4>
+                <h6>
+                  Promotion World has once placed PageTraffic <br />
+                  among the top.
+                </h6>
+                <a href="#" style="color: #e71d36"
+                  >Read more
+                  <span>
+                    <img src="images/arrow-right.png" alt="" class="arrow" />
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Blog Post Section End -->
+    </main>
+    <!-- Main container End -->
+
+    <!-- Footer -->
+    <footer>
+      <h1>DeMo.</h1>
+      <div class="row">
+        <div class="col-md-5">
+          <p style="font-size: 14px">
+            FindBestSEO has ranked PageTraffic <br />
+            among the top 10 SEO companies <br />
+            for 2020.
+          </p>
+          <ul class="c-first">
+            <li>
+              <img src="images/facebook.png" alt="" />
+            </li>
+            <li>
+              <img src="images/linkedin.png" alt="" />
+            </li>
+            <li>
+              <img src="images/twitter.png" alt="" />
+            </li>
+            <li>
+              <img src="images/youtube.png" alt="" />
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-2">
+          <h5 style="color: #2ec4b6">COMPANY</h5>
+          <ul class="c-second" style="padding: 0; margin: 0">
+            <li><a href="#"></a>About</li>
+            <li><a href="#"></a>Services</li>
+            <li><a href="#"></a>Press</li>
+            <li><a href="#"></a>Resources</li>
+            <li><a href="#"></a>Blog</li>
+          </ul>
+        </div>
+        <div class="col-md-5 c-thrid">
+          <h5 style="color: #2ec4b6; margin-left: 30px">news letter</h5>
+          <div class="footer-card d-flex justify-content-around">
+            <div>
+              <img src="images/Rectangle 22.png" alt="" />
+            </div>
+            <div>
+              <h6 style="color: #2ec4b6; font-size: 14px">
+                Per Click Management
+              </h6>
+              <p style="font-size: 13px">
+                PageTraffic is a premier Search <br />
+                Engine Marketing ( SEM).
+              </p>
+              <div>
+                <p style="font-size: 11px">
+                  <span class="m-lg-2"
+                    ><img src="images/Ellipse 1.png" alt=""
+                  /></span>
+                  15 April 2021
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-card d-flex justify-content-around">
+            <div>
+              <img src="images/Rectangle 22.png" alt="" />
+            </div>
+            <div>
+              <h6 style="color: #2ec4b6; font-size: 14px">
+                Per Click Management
+              </h6>
+              <p style="font-size: 13px">
+                PageTraffic is a premier Search <br />
+                Engine Marketing ( SEM).
+              </p>
+              <div>
+                <p style="font-size: 11px">
+                  <span class="m-lg-2"
+                    ><img src="images/Ellipse 1.png" alt=""
+                  /></span>
+                  15 April 2021
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- lower footer -->
+      <div
+        class="lower-footer d-flex justify-content-between mt-4"
+        style="font-size: 13px"
+      >
+        <p>© 2021 DeMO Insurance Inc. Patent Pending. All Rights Reserved.</p>
+        <p>
+          <span><a href="#" style="color: #2ec4b6">Privacy</a></span> | Terms of
+          Service
+        </p>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- Bootstrap link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- silk_slider js file -->
+    <script src="js/script.js"></script>
+
+    <!-- my_Script file -->
+    <script src="js/slick.min.js"></script>
+
+    <!-- first slider featured section -->
+    <script>
+      $(document).ready(function () {
+        $(".img-container").slick({
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          infinite: true,
+          prevArrow: false,
+          nextArrow: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 550,
+              settings: {
+                centerMode: true,
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+
+    <!-- second slider client section -->
+    <script>
+      $(document).ready(function () {
+        function initSlick(slidesToShow) {
+          $(".image-container").slick({
+            slidesToShow: slidesToShow,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow:
+              '<span class="c_d_arow prev_arrow"><i class="uil uil-angle-left"></i></span>',
+            nextArrow:
+              '<span class="c_d_arow next_arrow"><i class="uil uil-angle-right"></i></span>',
+          });
+          responsive: [
+            {
+              breakpoint: 769,
+              settings: {
+                prevArrow: false,
+                nextArrow: false,
+              },
+            },
+          ];
+        }
+        // Initialize the slider initially
+        initSlick(4);
+
+        $(window).on("resize", function () {
+          var screenWidth = $(window).width();
+          var slidesToShow;
+          if (screenWidth > 1200) {
+            slidesToShow = 4;
+          } else if (screenWidth >= 992) {
+            slidesToShow = 3;
+          } else if (screenWidth >= 768 || screenWidth >= 576) {
+            slidesToShow = 2;
+          } else {
+            slidesToShow = 1;
+          }
+          $(".image-container").slick("unslick");
+          initSlick(slidesToShow);
+        });
+      });
+    </script>
+
+    <!-- thrid slider blog post section-->
+    <script>
+      $(document).ready(function () {
+        $(".blog_post_images_container").slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          prevArrow:
+            '<span class="prev_arrow"><i class="uil uil-angle-left"></i></span>',
+          nextArrow:
+            '<span class="next_arrow"><i class="uil uil-angle-right"></i></span>',
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                infinite: true,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>
